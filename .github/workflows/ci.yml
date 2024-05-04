@@ -21,7 +21,7 @@ jobs:
       - name: Conditional commit
         if: env.should_commit == '1'
         run: |
-          git config --local user.email "waiver-snitch.04@icloud.com"
+          git config --local user.email "s4oh8rrp@duck.com"
           git config --local user.name "kryxie222"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
